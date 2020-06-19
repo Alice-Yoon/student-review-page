@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Permanent+Marker&display=swap');
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.landing_logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+}
+
+.ladning_menu {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+.logo {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    color: palevioletred;
+}
+
+.menu {
+    font-family: 'Balsamiq Sans', cursive;
+    color: 'white'
+}

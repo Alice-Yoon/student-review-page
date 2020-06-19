@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect} from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import LandingPage from './components/view/LandingPage/LandingPage';
+import ClassReviewPage from './components/view/ClassReviewPage/ClassReviewPage';
+import MySentencePage from './components/view/MySentencePage/MySentencePage';
+import NavBar from './components/view/NavBar/NavBar';
+import NotFoundPage from './components/view/NotFoundPage/NotFoundPage';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Router>
+      <Switch>
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/classreview/:id" component={ClassReviewPage} />
+        <Route exact path="/mysentence" component={MySentencePage} />
+        <Route component={NotFoundPage} />
+      </Switch>
+    </Router>
+    </>
   );
 }
 

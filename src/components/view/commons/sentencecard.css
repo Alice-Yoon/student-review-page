@@ -1,0 +1,38 @@
+.buttons {
+    /* border: 1px solid red; */
+    margin-top: 5px;
+}
+
+button {
+    border-radius: 5px;
+    width: 50px;
+    /* margin: 1px 0; */
+    background-color: salmon;
+    color: #fff;
+    border: 1px solid pink;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.add-btn {
+    background-color: gray;
+    color: #fff;
+    border-color: gray;
+    margin-top: 5px;
+}
+
+.add-btn:hover {
+    background-color: red;
+}
+
+.more_btn {
+    width: 100px;
+    padding: 10px 0;
+}
